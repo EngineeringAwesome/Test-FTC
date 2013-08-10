@@ -14,5 +14,12 @@ task main() {
 
     motor[leftWheel] = joystick.joy1_y1;
     //add teleop code here
+
+    if( joy1Btn(5) ) {
+      motor[arm] = 50;
+    }
+    else {
+      motor[arm] = 0;
+    }
   }
 }
