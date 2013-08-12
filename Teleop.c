@@ -10,24 +10,30 @@
 
 void updateStatus();
 
-task main() {
-  while(true) {
+task main()
+{
+  while(true)
+  {
     getJoystickSettings(joystick);
 
     motor[leftWheel] = joystick.joy1_y1;
     //add teleop code here
 
-    if( joy1Btn(5) ) {
+    if(joy1Btn(5))
+    {
       motor[arm] = 50;
     }
-    else {
+    else
+    {
       motor[arm] = 0;
     }
 
-    if ( joy2Btn(10) ) {
+    if (joy2Btn(10))
+    {
       //write the battery status to the debug log
     }
-    else if ( joy2Btn(11) ) {
+    else if (joy2Btn(11))
+    {
       //reset the arm to a known position
     }
 
