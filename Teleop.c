@@ -28,6 +28,9 @@ task main() {
     else if ( joy2Btn(10) ) {
       //write the battery status to the debug log
     }
+    else if ( joy2Btn(11) ) {
+      //reset the arm to a known position
+    }
 
   }
 }
