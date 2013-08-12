@@ -21,5 +21,13 @@ task main() {
     else {
       motor[arm] = 0;
     }
+
+    if( joy2Btn(4) ) {
+      //write a command to the debug log
+    }
+    else if ( joy2Btn(10) ) {
+      //write the battery status to the debug log
+    }
+
   }
 }
